@@ -1,22 +1,74 @@
 .wrapper{
-    margin: 200px 300px 200px 300px;
+    margin: 50px 20% 0px 20%;
     background-color: rgb(244,244,244);
+    padding:3% 5% 3% 5%;
+    height: auto
 }
 
 .additionBTN{
 
     background-color: rgb(251,113,0);
+    color: white;
+    font-size: 65px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 0;
+    position: absolute;
+    top: -18px;
+    right: -20px;
+    cursor:pointer;
+    font-family: 'Raleway', sans-serif;
+    
 }
+.insertion:focus{
+    outline: none;
+    
 
+}
+.insertion{
+    width: 100%;
+    border: lightgrey 2px solid;
+    height : 35px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: larger;
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
 .card{
-    border-left: rgb(251,113,0) solid 3px ;
+    border-left: rgb(251,113,0) solid 4px ;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: grey;
 }
 .title{
     color: rgb(251,113,0);
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
 
+}
+.form{
+    position: relative;
+    margin-bottom: 40px;
+
+}
+.fa-trash{
+    color: grey;
+}
+.display{
+    margin-top: 40px;
+}
+i{
+    cursor: pointer;
 }

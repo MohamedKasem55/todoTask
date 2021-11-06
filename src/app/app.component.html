@@ -1,4 +1,16 @@
 <div class="wrapper" > 
+  
+    <h1 class="title" > Todo App </h1>
 
-
+    <div class="form" >
+      <input class="insertion" [(ngModel)]="newTodo" type="text"/>
+      <button class="additionBTN" [disabled]="newTodo===''" [ngStyle]="{cursor: newTodo===''? 'auto':'pointer'}" (click)="addTodo()" > + </button>
+    </div>
+    <div class="displaying" >
+      <div class="card" *ngFor="let todo of todos; let i = index" >
+        <h3 class="todoName" >{{todo}}</h3>
+        <i class="fas fa-trash" (click)="removeTodo(i)" ></i>
+      </div>
+    </div>
 </div>
+
